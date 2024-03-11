@@ -57,13 +57,15 @@ vertical-align: top;
 .flexContainer{
     display: flex;
     flex-direction: row;
-}
-
-.flexContainer > div {
-width: 33%;
+    width: 100%;
 }
 
 .workGrid {
     display: grid;
-    grid-template-areas: 'myArea myArea myArea myArea myArea'
+    grid-template-areas: 'User Research User Flows Wireframing'
+}
+
+@media only screen and (max-width: 600) {
+    display: grid;
+    grid-template-areas: 'User Research User Flows Wireframing'
 }
